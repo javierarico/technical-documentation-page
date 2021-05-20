@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 290px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #525254;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+#navbar header {
+  color: #000;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 10px;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  min-width: 290px;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar ul {
+  border-top: 1.6px solid #000;
+  border-bottom: 1.6px solid #000;
+  border-right: 1.4px solid #000;
+  height: 210px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}  
+
+#navbar .nav-link {
+  display: block;
+  padding-left: 30px;
+  color: #;
+  text-decoration: none;
+  line-height: 2.7;
+  border: 0.5px solid #919191;
+}
+
+#main-doc header {
+  color: #000;
+  font-size: 1.8em;
+  margin: 10px 30px;
+}
+
+#main-doc article {
+  font-size: 0.96em;
+  margin: 15px 0 20px 50px;
+  max-width: 80vw;
+}
+
+#main-doc article p {
+  margin-bottom: 18px;
+}
+
+#main-doc article ul {
+  margin-left: 50px;
+}
+
+#main-doc article li {
+  margin-top: 15px; 
+}
+
+code {
+  display: block;
+  font-family: monospace;
+  background-color: #f2f2f2;
+  text-align: left;
+  margin: 10px;
+  padding: 15px;
+  white-space: pre-line;
+  line-height: 2;
+  border-radius: 5px;
+}
+
+.attribution {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  bottom: 0px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: rgb(0 206 209);
+}
+
+@media only screen and (min-width: 800px) {
+  #navbar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    border-right: 3px solid #9e9e9e;
+  }
+  
+  #navbar header {
+    margin-left: 0;
+  }
+  
+  #navbar ul {
+    height: 88vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: none;
+  }
+  
+  #navbar li {
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    display: block;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 300px;
+    max-width: 76vw;
+  }
+}
